@@ -90,9 +90,7 @@ section p {
 }
 
 section {
-  padding-right: 80px;
-  padding-left: 80px;
-  padding-top: 80px;
+  padding: 80px;
 }
 
 section img {
