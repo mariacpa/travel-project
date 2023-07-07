@@ -2,6 +2,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: #181525;
   color: white;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -13,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 400;
   margin: 0;
   line-height: 1.5;
@@ -24,14 +26,21 @@ h3 {
   margin: 0;
   line-height: 1.5;
   letter-spacing: 5px;
+  font-weight: 900;
 }
 
 h4 {
   font-size: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 18px;
 }
 
 p {
   font-size: 16px;
+  font-weight: 400;
 }
 
 header {
@@ -51,13 +60,6 @@ footer {
     url(/img/bg-footer1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #181525;
 }
 
 header h2 {
@@ -71,6 +73,50 @@ header a {
   letter-spacing: 3px;
   padding: 16px 32px;
   text-decoration: none;
+}
+
+section h5 {
+  margin: 0px;
+  opacity: 0.6;
+  letter-spacing: 5px;
+}
+
+section h2 {
+  font-weight: 700;
+}
+
+section p {
+  opacity: 0.6;
+}
+
+section {
+  padding-right: 80px;
+  padding-left: 80px;
+  padding-top: 80px;
+}
+
+section img {
+  width: 100%;
+  display: block;
+}
+
+.eat {
+  text-align: center;
+  background-color: #272435;
+}
+
+.photos {
+  text-align: center;
+}
+
+.boxes2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+footer {
+  padding: 30px 80px;
 }
 
 footer a {
@@ -94,16 +140,24 @@ footer ul {
     padding: 60px 0;
   }
 
-  header h1 {
+  h1 {
     font-size: 48px;
   }
 
-  header h2 {
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
     font-size: 20px;
   }
 
-  header h3 {
-    font-size: 12px;
+  h5 {
+    font-size: 16px;
   }
 
   header a {
@@ -112,18 +166,23 @@ footer ul {
     padding: 14px 28px;
   }
 
-  footer {
-    padding: 30px;
-  }
-
   footer h4 {
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
+  section {
+    padding: 30px;
+  }
+
   .boxes {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .boxes2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 15px;
   }
 }
