@@ -26,6 +26,14 @@ h3 {
   letter-spacing: 5px;
 }
 
+h4 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/img/budapest-building2.jpg);
@@ -33,6 +41,17 @@ header {
   background-size: cover;
   padding: 100px;
   text-align: center;
+}
+
+footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
+    ),
+    url(/img/bg-footer1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
 }
 
 .container {
@@ -52,6 +71,22 @@ header a {
   letter-spacing: 3px;
   padding: 16px 32px;
   text-decoration: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
 }
 
 @media (max-width: 900px) {
@@ -75,5 +110,20 @@ header a {
     font-size: 10px;
     letter-spacing: 3px;
     padding: 14px 28px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
   }
 }
